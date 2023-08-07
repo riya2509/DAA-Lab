@@ -1,0 +1,2 @@
+7 found at index position 2
+Number of comparisons: 3
