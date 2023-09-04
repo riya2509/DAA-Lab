@@ -7,7 +7,8 @@ int main()
     scanf("%u", &number);
 
     // Extracting each byte
-    // 0xFF hexadecimal numerical system which shifts the bit to the right and then performs bitwise AND operation
+    // 0xFF hexadecimal numerical system which shifts the bit to the right
+    // and then performs bitwise AND operation
     unsigned char byte1 = (number >> 24) & 0xFF;
     unsigned char byte2 = (number >> 16) & 0xFF;
     unsigned char byte3 = (number >> 8) & 0xFF;

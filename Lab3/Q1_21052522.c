@@ -3,7 +3,7 @@
 int binarySearchLeftmost(int arr[], int size, int key, int *numComparisons)
 {
     int low = 0, high = size - 1, mid, result = -1;
-    *numComparisons = 0;
+    *numComparisons = 0; // initializing the number of comparisons pointer to 0
 
     while (low <= high)
     {
@@ -13,7 +13,7 @@ int binarySearchLeftmost(int arr[], int size, int key, int *numComparisons)
         if (arr[mid] == key)
         {
             result = mid;
-            high = mid - 1; // Move left to find the leftmost appearance
+            high = mid - 1; // Moving left to find the leftmost appearance
         }
         else if (arr[mid] < key)
         {
